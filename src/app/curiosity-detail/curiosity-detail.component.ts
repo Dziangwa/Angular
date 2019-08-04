@@ -9,7 +9,7 @@ import { Observable, of } from 'rxjs';
 @Component({
   selector: 'app-curiosity-detail',
   templateUrl: './curiosity-detail.component.html',
-  styleUrls: ['./curiosity-detail.component.css']
+  styleUrls: ['./curiosity-detail.component.sass']
 })
 export class CuriosityDetailComponent implements OnInit {
 

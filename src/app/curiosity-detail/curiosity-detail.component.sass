@@ -1,0 +1,30 @@
+$baseMinWidth: 40px
+$fontSize: 16px
+
+%button-shared
+    border:none
+    border-radius: 5px
+    min-width: 40px
+    margin: 5px
+
+body 
+    font-size: $fontSize
+
+.backButton
+    float: left
+    @extend %button-shared
+
+.nextButton
+    @extend %button-shared
+
+.nextButton:hover
+    color: #039be5
+
+.backButton:hover
+    color: #039be5
+
+.temp
+    clear: left
+
+.text
+    margin: 5px

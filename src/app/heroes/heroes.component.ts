@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
-import { HEROES } from '../moch-heroes';
 import { HeroService } from '../hero.service';
 
 @Component({

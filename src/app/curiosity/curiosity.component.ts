@@ -5,20 +5,23 @@ import { CuriosityService } from '../curiosity.service';
 @Component({
   selector: 'app-curiosity',
   templateUrl: './curiosity.component.html',
-  styleUrls: ['./curiosity.component.css']
+  styleUrls: ['./curiosity.component.sass']
 })
 export class CuriosityComponent implements OnInit {
 
-  curiosities: Curiosity[] = [];
+  curiosities: Curiosity[];
 
   constructor(
     private curiosityService: CuriosityService,
   ) { }
 
   ngOnInit() {
-  this.curiosities = this.curiosityService.getCuriosities();
+    this.getCuriosity();
   }
 
-
+  getCuriosity(): void{
+    this.curiosityService.getCuriosities()
+    .subscribe(curiosities => this.curiosities = curiosities);
+  }
 
 }
