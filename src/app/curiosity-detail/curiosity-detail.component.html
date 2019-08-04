@@ -1,0 +1,12 @@
+<h4>Curiosity #{{curiosity.id}}</h4>
+<div class="buttons">
+        <a (click)="move()">
+            <span *ngIf="curiosity.id > 1">
+                <button routerLink="/curiosity/{{curiosity.id - 1}}"><</button>
+            </span>
+            <span *ngIf="curiosity.id < 8">
+                <button routerLink="/curiosity/{{curiosity.id + 1}}">></button>
+            </span>
+        </a>
+    </div>
+<div>{{curiosity.text}}</div>

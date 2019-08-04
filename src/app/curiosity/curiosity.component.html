@@ -1,0 +1,9 @@
+<h4>Curiosities!</h4>
+
+<ul class="curiosities">
+    <li *ngFor="let curiosity of curiosities">
+        <a routerLink="/curiosity/{{curiosity.id}}">
+            Curiosity #<span>{{curiosity.id}}</span>
+        </a>
+    </li>
+</ul>
