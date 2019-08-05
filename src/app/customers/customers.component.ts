@@ -24,4 +24,20 @@ export class CustomersComponent implements OnInit {
       .subscribe(customers => this.customers = customers);
   }
 
+  values = '';
+
+  onKeyUp(event: KeyboardEvent): void{
+    this.values += (<HTMLInputElement>event.target).value + ' | ';
+  }
+
+  add(name: string): void{
+    this.customerService.addCustomer({ name } as Customer)
+      .subscribe(customer => this.customers.push(customer));
+  }
+
+  delete(customer: Customer): void{
+    this.customers = this.customers.filter(h => h !==customer);
+    this.customerService.deleteCustomer(customer).subscribe();
+  }
+
 }

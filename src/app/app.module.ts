@@ -15,6 +15,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CuriosityComponent } from './curiosity/curiosity.component';
 import { CuriosityDetailComponent } from './curiosity-detail/curiosity-detail.component';
 import { CustomersComponent } from './customers/customers.component';
+import { PopupComponent } from './popup.component';
+import { PopupService } from './popup.service';
+import { ElementyComponent } from './elementy/elementy.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { CustomersComponent } from './customers/customers.component';
     HeroSearchComponent,
     CuriosityComponent,
     CuriosityDetailComponent,
-    CustomersComponent
+    CustomersComponent,
+    PopupComponent,
+    ElementyComponent,
   ],
   imports: [
     HttpClientModule,
@@ -38,7 +43,8 @@ import { CustomersComponent } from './customers/customers.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [PopupService],
+  bootstrap: [AppComponent],
+  entryComponents: [PopupComponent],
 })
 export class AppModule { }

@@ -1,7 +1,14 @@
+<h3>Click on list item to delete</h3>
+
 <div>
     <ul>
         <li *ngFor="let customer of customers">
-            <span>{{customer.id}} - {{customer.name}}</span>
+            <span style="float:left;">{{customer.id}} - {{customer.name}}</span>
+            <button (click)="delete(customer)">x</button>
+            <div style="clear:left"></div>
         </li>
     </ul>
 </div>
+
+<h3>Write something and click [enter] to add to list</h3>
+<input #box (keyup.enter)="add(box.value)">

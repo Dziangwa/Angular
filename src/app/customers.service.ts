@@ -17,4 +17,14 @@ export class CustomersService {
   getCustomers(): Observable<Customer[]>{
     return this.http.get<Customer[]>(this.customersUrl);
   }
+
+  addCustomer(customer: Customer): Observable<Customer>{
+    return this.http.post<Customer>(this.customersUrl, customer)
+  }
+
+  deleteCustomer(customer: Customer | number): Observable<Customer>{
+    const id = typeof customer === 'number' ? customer : customer.id;
+    const url = `${this.customersUrl}/${id}`;
+    return this.http.delete<Customer>(url);
+  }
 }
