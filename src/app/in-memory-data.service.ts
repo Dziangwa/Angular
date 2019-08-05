@@ -29,7 +29,15 @@ export class InMemoryDataService implements InMemoryDbService {
       {id: 7, text: 'Najstarszy grobowiec z oswojonym kotem został znaleziony na Cyprze i jest starszy od egipskich malowideł przedstawiających koty o ok 4 tyś. lat.'},
       {id: 8, text: 'Koty nie rozpoznają słodkiego smaku.'},
     ];
-    return {heroes, curiosities};
+    const customers = [
+      {id: 1, name: "John"},
+      {id: 2, name: "Sally"},
+      {id: 3, name: "Tom"},
+      {id: 4, name: "Brian"},
+      {id: 5, name: "Jessica"},
+      {id: 6, name: "Mike"},
+    ]
+    return {heroes, curiosities, customers};
   }
 
   // Overrides the genId method to ensure that a hero always has an id.

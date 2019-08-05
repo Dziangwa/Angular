@@ -14,6 +14,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CuriosityComponent } from './curiosity/curiosity.component';
 import { CuriosityDetailComponent } from './curiosity-detail/curiosity-detail.component';
+import { CustomersComponent } from './customers/customers.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CuriosityDetailComponent } from './curiosity-detail/curiosity-detail.co
     DashboardComponent,
     HeroSearchComponent,
     CuriosityComponent,
-    CuriosityDetailComponent
+    CuriosityDetailComponent,
+    CustomersComponent
   ],
   imports: [
     HttpClientModule,
