@@ -8,16 +8,16 @@ import { Injectable } from '@angular/core';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: 'Dr Nice' },
-      { id: 12, name: 'Narco' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' }
+      { id: 11, name: 'Dr Nice', emotion: 'happy' },
+      { id: 12, name: 'Narco', emotion: 'sad' },
+      { id: 13, name: 'Bombasto', emotion: 'happy' },
+      { id: 14, name: 'Celeritas', emotion: 'happy' },
+      { id: 15, name: 'Magneta', emotion: 'sad' },
+      { id: 16, name: 'RubberMan', emotion: 'sad' },
+      { id: 17, name: 'Dynama', emotion: 'happy' },
+      { id: 18, name: 'Dr IQ', emotion: 'happy' },
+      { id: 19, name: 'Magma', emotion: 'sad' },
+      { id: 20, name: 'Tornado', emotion: 'happy' }
     ];
     const curiosities = [
       {id: 1, text: 'Każdy koci nos jest tak unikalny, jak linie papilarne u człowieka.'},

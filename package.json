@@ -21,11 +21,11 @@
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
     "angular-in-memory-web-api": "^0.8.0",
+    "document-register-element": "^1.7.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "webdriver": "^5.11.12",
-    "zone.js": "~0.9.1",
-    "document-register-element": "^1.7.2"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.802.0",

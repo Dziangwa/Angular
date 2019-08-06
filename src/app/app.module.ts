@@ -18,6 +18,8 @@ import { CustomersComponent } from './customers/customers.component';
 import { PopupComponent } from './popup.component';
 import { PopupService } from './popup.service';
 import { ElementyComponent } from './elementy/elementy.component';
+import { HighlightDirective } from './highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { ElementyComponent } from './elementy/elementy.component';
     CustomersComponent,
     PopupComponent,
     ElementyComponent,
+    HighlightDirective,
+    UnlessDirective,
   ],
   imports: [
     HttpClientModule,
