@@ -20,6 +20,13 @@ import { PopupService } from './popup.service';
 import { ElementyComponent } from './elementy/elementy.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
+import { TemporaryComponent } from './temporary/temporary.component';
+import { ExponentialStrengthPipe } from './exponential-strength.pipe';
+import { AppPowerBoosterComponent } from './app-power-booster/app-power-booster.component';
+import { ReactiveFavoriteColorComponent } from './reactive-favorite-color/reactive-favorite-color.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 
 @NgModule({
   declarations: [
@@ -36,12 +43,19 @@ import { UnlessDirective } from './unless.directive';
     ElementyComponent,
     HighlightDirective,
     UnlessDirective,
+    HeroBirthdayComponent,
+    TemporaryComponent,
+    ExponentialStrengthPipe,
+    AppPowerBoosterComponent,
+    ReactiveFavoriteColorComponent,
+    ProfileEditorComponent,
   ],
   imports: [
     HttpClientModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
 
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }

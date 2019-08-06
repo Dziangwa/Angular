@@ -1,0 +1,8 @@
+<label>
+    Color:
+    <input type='text' [formControl]="favoriteColorControl">
+    <p>
+        Value: {{ favoriteColorControl.value }}
+    </p>
+</label>
+<button (click)="updateColor()">Update Color</button>
