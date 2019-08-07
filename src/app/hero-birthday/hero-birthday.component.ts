@@ -20,4 +20,6 @@ export class HeroBirthdayComponent implements OnInit {
   toggleFormat(){
     this.toggle = !this.toggle;
   }
+
+  
 }

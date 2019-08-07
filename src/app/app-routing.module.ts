@@ -8,6 +8,8 @@ import { CuriosityDetailComponent } from './curiosity-detail/curiosity-detail.co
 import { CustomersComponent } from './customers/customers.component';
 import { HeroBirthdayComponent } from './hero-birthday/hero-birthday.component';
 import { TemporaryComponent } from './temporary/temporary.component';
+import { ObserversComponent } from './observers/observers.component';
+import { AnimationsComponent } from './animations/animations.component';
 
 const routes: Routes = [
   { path: 'heroes', component: HeroesComponent},
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'customers', component: CustomersComponent },
   { path: 'birthday', component: HeroBirthdayComponent },
   { path: 'temporary', component: TemporaryComponent },
+  { path: 'observers', component: ObserversComponent },
+  { path: 'animations', component: AnimationsComponent },
 ];
 
 @NgModule({

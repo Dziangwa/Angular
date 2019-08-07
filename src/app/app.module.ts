@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,8 @@ import { AppPowerBoosterComponent } from './app-power-booster/app-power-booster.
 import { ReactiveFavoriteColorComponent } from './reactive-favorite-color/reactive-favorite-color.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { ObserversComponent } from './observers/observers.component';
+import { AnimationsComponent } from './animations/animations.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +52,11 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
     AppPowerBoosterComponent,
     ReactiveFavoriteColorComponent,
     ProfileEditorComponent,
+    ObserversComponent,
+    AnimationsComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
     BrowserModule,
